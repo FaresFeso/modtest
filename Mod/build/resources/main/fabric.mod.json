@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "bazaar-alert",
+	"version": "1.0.0",
+	"name": "Bazaar Alert",
+	"description": "Alerts you when someone overbids your Hypixel SkyBlock bazaar buy orders or sell offers.",
+	"authors": [
+		"You"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.bazaaralert.client.BazaarAlertClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "bazaar-alert.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
